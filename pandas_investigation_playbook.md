@@ -3,7 +3,7 @@
 
 ## The one idea
 I do **not** memorize pandas. I memorize the **questions an analyst asks**. Each question
-has one tool. Learn the questions and the tool follows. The whole DataCo analysis used ~8 moves.
+has one tool. Learn the questions — the tool follows. The whole DataCo analysis used ~8 moves.
 
 ---
 
@@ -13,7 +13,7 @@ This is the sequence I followed on DataCo. It works on almost any dataset.
 1. **Did it all load? How big is it?** → confirm before trusting anything
 2. **What are my columns?** → find the ones that matter
 3. **What's actually inside this column?** → look before analysing
-4. **Derive the metric MYSELF, don't trust the label** → a label is a hypothesis
+4. **Derive the metric MYSELF — don't trust the label** → a label is a hypothesis
 5. **Do the definitions agree?** → cross-check; a gap is a finding
 6. **Decide & write it down** → a number I can defend in writing
 7. **Put money on it** → what's the £/$ exposed?
@@ -29,7 +29,7 @@ This is the sequence I followed on DataCo. It works on almost any dataset.
 
 | When I want to know... | I reach for... | My DataCo example |
 |---|---|---|
-| Did it load? How many rows/cols? | `df.shape` | `(180519, 53)` matched my known count |
+| Did it load? How many rows/cols? | `df.shape` | `(180519, 53)` — matched my known count |
 | What are all the columns + types + nulls? | `df.info()` | found the 6 delivery columns |
 | What values are in a category, and how many? | `df["col"].value_counts()` | Late delivery = 98,977 |
 | How many rows meet a condition? | make a mask, then `.sum()` | `(real > scheduled).sum()` = 103,400 |
@@ -50,7 +50,7 @@ This is the sequence I followed on DataCo. It works on almost any dataset.
 
 ---
 
-## The judgment (this is NOT syntax, it's what makes me an analyst)
+## The judgment (this is NOT syntax — it's what makes me an analyst)
 - **Rate, not count.** Weight every rate by its volume. Worst-behaved ≠ biggest problem.
 - **A label is a hypothesis.** Derive the number myself; if it disagrees with the label, that gap is the finding.
 - **Test my own story.** A plausible mechanism ("cancelled in the warehouse") is a guess until the data confirms it.
@@ -63,7 +63,7 @@ This is the sequence I followed on DataCo. It works on almost any dataset.
 ## How to make this stick (reproduce COLD)
 Reading this ≠ knowing it. To own it:
 1. **Blank notebook, same dataset.** Rebuild the DataCo analysis from memory. Use this map only when stuck.
-2. Do it again in a few days, this map closed, then open only to check.
+2. Do it again in a few days — this map closed, then open only to check.
 3. Then a **different** dataset (Superstore, Vrinda), same loop. The loop transfers; only the column names change.
 4. When I can run the loop on a new dataset without looking here, it's mine.
 
