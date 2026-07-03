@@ -1,0 +1,12 @@
+# Data — sourced externally, not committed (92MB, public Kaggle dataset)
+*.csv
+
+# Jupyter
+.ipynb_checkpoints/
+jupyter.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
