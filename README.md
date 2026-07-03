@@ -12,7 +12,7 @@ that risk, and where does the problem actually come from?
 ## Headline findings
 - 54.8% of orders (98,977) arrived late. I confirmed this from the raw shipping dates myself
   instead of trusting the vendor's `Delivery Status` label.
-- \$2.14M of profit and \$20.1M of revenue sit on those late orders.
+- USD 2.14M of profit and USD 20.1M of revenue sit on those late orders.
 - First Class, the premium tier, is the worst performer against its promise at 95% late, even
   though it ships in two days, faster than the reliable Standard Class at four.
 - Standard Class produces the largest group of late orders, around 41,000, purely on volume,
